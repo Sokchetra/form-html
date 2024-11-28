@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="top">Create Account</div>
+        
+        
+    <form>
+     <div class="name">
+        <label class="firstname"><b>First name *</b>
+        <input type="text"  placeholder="enter your first name..." required>
+        </label>
+        <label class="lastname"><b>Last name</b>
+        <input type="text" placeholder="enter your last name...." required>
+        </label>
+    </div>
+
+    <label class="email"><B>Email*</B>
+        <input type="email" placeholder="enter your email..." id="email" required>
+    </label>
+
+
+
+    <div class="whole-pw">
+        <label class="pw"><b>Password*</b>
+            <input type="password" placeholder="Enter your password..." required>
+        </label>
+        <label class="cpw"><b>Confirm Password</b>
+            <input type="password" placeholder="Enter you password again..."equired>
+        </label>
+    </div>  
+    
+    <div class="gen-hob">
+
+        <label class="gender"><b>Gender:</b>
+        <div class="radio-group">
+            <input type="radio" name="gender" value="male" /> Male
+            <input type="radio" name="gender" value="female" /> Female
+        </div>
+        </label>
+
+        
+        <label class="hobbies"><b>Hobbies:</b>
+        <div class="checkbox">
+            
+                <input type="checkbox" name="Music" value="Music">Music
+            
+            
+                <input type="checkbox" name="Sports" value="Sports">sports
+            
+            
+                <input type="checkbox" name="Travel" value="Travel">Travel
+            
+            
+                <input type="checkbox" name="Movies" value="Movies">Movies
+            
+
+        </div>
+    </label>
+    </div>
+
+    <div class="income">  
+        <label class="source"><b>Source of Income</b>
+        <select>
+            <option>Employed</option>
+            <option>Invesment</option>
+            <option>Government Benefits</option>
+            <option>Other Income</option>
+        </select>
+        </label>
+
+        <div class="income-slider">
+            <label><b>Income:</b>
+                <input type="range" id="income-range" min="0" max="100000" value="20000">
+            </label>
+            
+        </div>
+    </div> 
+     
+    <div class="pfp-age">
+        <label class="uplaod"><b>Upload Profile Picture</b>
+            <input type="file" placeholder="Choose file" required>
+        </label>
+
+        <label class="age"><b>Age</b>
+            <input type="text" id="age" required>
+        </label>
+    </div>
+
+    
+    <label class="bio"><b>Bio</b>
+        <input type="text" id="bio">
+    </label>
+
+    
+     <div class="create">
+        <button type="submit" id="submit"><b>Create</b></button>
+    </div>   
+        
+     </form>   
+
+    </div>
+    
+</body>
+</html>
